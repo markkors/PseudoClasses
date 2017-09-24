@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo Classes</title>
+		<link rel="stylesheet" href="css/styles.css">
+<style>
+	
+	
+	
+</style>
+</head>
+<body>
+	<h1>CSS / HTML Pseudo Classes</h1>
+	<div class="explain leerdoel">
+		<p>leerdoel:</p>
+		<p>Je leert in deze oefening hoe je via CSS verschillende pseudo classes gebruikt. 
+		 
+		</p>
+	</div>
+	<section>
+		<div class="explain opdracht">
+			<p>Opdracht:</p>
+			<p>Volg de omschrijving op bij ieder element in de onderstaande code</p>
+			<ul>
+                <li>Je mag de CSS toevoegen aan de externe stylesheet css/styles.css</li>
+                <li>Eventueel kun je de styling toevoegen binnen de HTML binnen de &lt;style&gt; tags in de &lt;head&gt;</li>
+            </ul>
+		</div> 
+	</section>
+	
+    
+    
+	<section>
+		<button class="HelperButton" onclick="helpMe()">Hulp nodig?</button>
+		<h3 class="hidden">Handige links</h3>
+		<ul class="hidden">
+			<li>
+				<a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">
+					Lees dit!
+				</a>
+			</li>
+			<li>			
+				<a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">
+					Of dit!
+				</a>
+			</li>
+			
+		</ul>
+	</section>
+	
+	<hr>
+    
+    <section class="exercise">
+    
+        <p>Als je met de muis over deze regel gaat moet de tekst rood kleuren</p>
+        
+        
+        <a href="#">Deze link moet rood gekleurd zijn, ook na activeren!</a>
+        
+        <p>Zorg via een pseudo class selector dat de oneven elementen rood worden, de even elementen groen</p>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+        
+    </section>
+    
+	
+	<script>
+	/*
+	Officieel dient javascript in de head tags of beter nog in zijn eigen .js bestand te staan.
+	*/
+		function helpMe() {
+			//document.getElementById("hiddenList").style.display = 'block';
+			var x = document.getElementsByClassName("hidden");
+			var i;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = 'block';
+			}
+			var y = document.getElementsByClassName("HelperButton");
+			var j;
+			for (j = 0; j < y.length; j++) {
+				y[j].style.display = 'none';
+			}
+		}
+	</script>
+
+	
+</body>
+</html>
