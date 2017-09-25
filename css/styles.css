@@ -3,9 +3,12 @@ body {
 		font-size: 1.2em;
 	}
 	
-	div,img {
-		border: 1px solid black;
+	
+	.randje {
+		border: 1px solid black;	
 	}
+	
+
 
 	.explain {
 		width: 60%;
@@ -14,7 +17,7 @@ body {
 		padding: 5px;
 	}
 	
-	.leerdoel {
+	.leerdoel, .italic {
 		font-style: italic;
 	}
 	
@@ -70,4 +73,5 @@ body {
 	.planet {
 		width: 300px;
 	}
+	
 	
