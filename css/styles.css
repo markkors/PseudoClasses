@@ -74,4 +74,9 @@ body {
 		width: 300px;
 	}
 	
-	
+	article {
+		margin: 10px 0 10px;
+		padding: 5px;
+		border: 1px solid;
+
+	}
